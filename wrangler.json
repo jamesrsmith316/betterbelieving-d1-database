@@ -1,0 +1,16 @@
+{
+  "compatibility_date": "2025-04-01",
+  "main": "src/index.ts",
+  "name": "betterbelieving-d1-database",
+  "upload_source_maps": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "46804ef7-f195-4557-85bb-5d31a6cd608d",
+      "database_name": "betterbelieving-d1"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
