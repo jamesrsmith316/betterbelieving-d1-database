@@ -27,7 +27,7 @@ export default {
         const bindings = words.flatMap(word => [`%${word}%`, `%${word}%`]);
 
         const stmt = env.DB.prepare(sql).bind(...bindings);
-        {results} = await stmt.all();
+        let {results} = await stmt.all();
 
       }
 
