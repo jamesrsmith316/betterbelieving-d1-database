@@ -15,7 +15,7 @@ export default {
     //if no results found, try splitting on space and look up all words individually
     if (results.length === 0) {
       // Build dynamic WHERE clause
-      const conditions = words.map(() => "(name LIKE ? OR keywords LIKE ?)").join(" AND ");
+      const conditions = words.map(() => "(name LIKE ? OR keywords LIKE ?)").join(" OR ");
       const sql = `SELECT id, name, slug, category FROM article WHERE ${conditions} ORDER BY name LIMIT 50`;
 
       // Bind each word twice (for name and keywords)
